@@ -2,23 +2,19 @@ public class Main {
     public static void main(String[] args) {
 
         int initially = 50;
-        int replenishment = 1170;
+        int replenishment = 70;
         int bonus = replenishment / 100;
         int result = initially + replenishment + bonus;
 
         if (replenishment > 1000) {
-            System.out.println(result);
+            System.out.println("Итоговый счет " + result);
+            System.out.println("Бонус " + bonus);
         } else {
-            System.out.println(initially + replenishment);
+            System.out.println("Итоговый счет " + result);
+            System.out.println("Бонус 0");
         }
     }
+
 }
 
-// Объявляете переменные для входных данных и
-// параметров программы: начального счёта,
-// суммы пополнения и тп
 
-// Условным оператором проверяете, превысила ли
-// сумма пополнения порог, и для этих двух разных
-// сценариев рассчитываете сумму бонуса и выводите
-// на экран.
